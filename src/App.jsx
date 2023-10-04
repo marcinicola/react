@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+export function App (){
+    
+    
 
-function App() {
- 
+    return (
 
-  return (
-    <>
-     
-    </>
-  )
+        <>
+        
+        </>
+
+    )
 }
-
-export default App
