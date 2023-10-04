@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <Hello name= {<p>Nicola</p>}/>
+     <Hello name= {Nicola}/>
     </>
   )
 }
