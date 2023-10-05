@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import { Hello } from './Exe'
+
 
 function App() {
-
+  const name = <p>Nicola</p>
   return (
     <>
-     <Hello name= {Nicola}/>
+     {name}
     </>
   )
 }
