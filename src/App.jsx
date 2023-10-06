@@ -1,14 +1,12 @@
-import './App.css'
-import { Counter } from './Counter'
+import "./App.css";
+import { Counter } from "./Counter";
 
 function App() {
- 
-
   return (
     <>
-     <Counter value = {0} increment = {1}/>
+      <Counter />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
