@@ -1,3 +1,5 @@
+import "./App.css"
+
 export function AlertClock() {
     function handleButtonClick() {
         alert('Current time: ' + new Date().toLocaleTimeString())
@@ -8,3 +10,4 @@ export function AlertClock() {
             </div>
         )
 }
+
