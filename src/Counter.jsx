@@ -8,6 +8,8 @@ export function Counter() {
   }
   return (
     <>
+      {/* Usiamo la funzione con la callback con parametro (counter) se ci sono piu' operazioni da eseguire, 
+      altrimenti il valore immediato come da esercizio */}
       <h2>{counter}</h2>
       <button onClick={handleClick}>Click</button>
     </>
