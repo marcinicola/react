@@ -1,16 +1,23 @@
-import { useState } from "react";
-import { CounterDisplay } from "./CounterDisplay";
+import { useEffect, useState } from "react";
 
 export function Counter() {
   const [counter, setCounter] = useState(0);
 
-  function handleClick() {
+  function handleIncrement() {
     setCounter(counter + 1);
+  }
+  function handleDecrement() {
+    setCounter(counter - 1);
+  }
+  function handleReset() {
+    setCounter(0);
   }
   return (
     <>
-      <CounterDisplay value={counter} />
-      <button onClick={handleClick}>Click</button>
+      <h2>{counter}</h2>
+      <button onClick={handleIncrement}>Increment</button>
+      <button onClick={handleDecrement}>Decrement</button>
+      <button onClick={handleReset}>Reset</button>
     </>
   );
 }
