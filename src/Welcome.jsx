@@ -4,8 +4,8 @@ export function Welcome({ name }) {
   return (
     <>
       <div>
-        {name === "John" && <p>Welcome,{name}</p>}
-        <Age age={66} />
+        <p>Welcome,{name}</p>
+        <Age age ={17} />
       </div>
     </>
   );
