@@ -1,3 +1,3 @@
 export function Age({ age }) {
-  return <>{age > 18 && <p>Your age is {age}</p>}</>;
+  return <>{age && <p>Your age is {age}</p>}</>;
 }
