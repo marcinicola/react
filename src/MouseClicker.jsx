@@ -4,7 +4,7 @@ export function MouseClicker() {
 
   }
   return (
-    <button name="oneButton" onClick={handleEvent}>
+    <button name="one" onClick={handleEvent}>
       <img width={24} height={24} />
       Click Me!
     </button>
