@@ -3,6 +3,10 @@ export function MouseClicker() {
     console.log(event.target);
 
   }
+  function handleEventImg(event) {
+    console.log(event.target.scr);
+
+  }
   return (
     
     /* Perche' Quando fai clic sull'immagine, 
@@ -10,7 +14,7 @@ export function MouseClicker() {
     quindi entrambi gli eventi vengono eseguiti. */
 
     <button name="oneButton" onClick={handleEvent}>
-      <img name="img" onClick={handleEvent} width={24} height={24} />
+      <img src="#" onClick={handleEventImg} width={24} height={24} />
       Click Me!
     </button>
   );
