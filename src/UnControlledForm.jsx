@@ -1,17 +1,20 @@
 export function UnControlledForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    /* SECONDO METODO */
-    const formData = new FormData(e.target);
+    const username = e.target.username.value;
+    const password = e.target.password.value;
+    const remember = e.target.remember.checked;
+    
     const data = {
-      username: formData.get("username"),
-      password: formData.get("password"),
-      remember: formData.get("remember") === "on" ? true : false,
+      username,
+      password,
+      remember,
     };
     console.log(data);
-};
-/* PRIMO METODO */
-/*    const username = e.target.elements.namedItem("username").value;
+  };
+
+  /*
+const username = e.target.elements.namedItem("username").value;
 const password = e.target.elements.namedItem("password").value;
 const remember = e.target.elements.namedItem("remember").checked;
 
