@@ -1,12 +1,12 @@
-import { useState } from 'react'
 import './App.css'
+import { FocusAbleInput } from './FocusAbleInput'
 
 function App() {
  
 
   return (
     <>
-     
+     <FocusAbleInput />
     </>
   )
 }
