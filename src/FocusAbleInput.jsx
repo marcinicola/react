@@ -2,10 +2,13 @@ import { useRef } from "react";
 import { useEffect } from "react";
 
 export function FocusAbleInput() {
-  const _inputRef = useRef(null);
+  const _isMounted = useRef(false);
 
   useEffect(() => {
-    _inputRef.current?.focus();
+    if (!_isMounted.current) {
+      console.log("Is Mounted")
+      _isMounted.current= true
+    }
   }, []);
-  return <input ref={_inputRef} type="text" />;
+  return <input type="text" />;
 }
