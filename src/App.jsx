@@ -1,5 +1,6 @@
 import './App.css'
 import { Login } from './Login'
+import { UnControlledForm } from './UnControlledForm';
 
 function App() {
  const onLogIn = (e,data) => {
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
      <Login onLogIn={onLogIn}/>
+     <UnControlledForm />
     </>
   )
 }
