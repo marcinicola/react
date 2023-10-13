@@ -1,7 +1,6 @@
 export function UnControlledForm() {
   const handleSubmit = (e) => {
-    e.preventDefault();
-    /* SECONDO METODO */
+    e.preventDefault()
     const formData = new FormData(e.target);
     const data = {
       username: formData.get("username"),
@@ -10,16 +9,6 @@ export function UnControlledForm() {
     };
     console.log(data);
 };
-/* PRIMO METODO */
-/*    const username = e.target.elements.namedItem("username").value;
-const password = e.target.elements.namedItem("password").value;
-const remember = e.target.elements.namedItem("remember").checked;
-
-const data = {
-  username,
-  password,
-  remember,
-}; */
 
   return (
     <form onSubmit={handleSubmit}>
