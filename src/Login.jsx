@@ -32,7 +32,7 @@ export function Login({ onLogIn }) {
 
   return (
     <>
-      <form>
+      <form onSubmit={(e)=>onLogIn(e,data)}>
         <input
           type="text"
           name="username"
@@ -51,7 +51,7 @@ export function Login({ onLogIn }) {
           checked={data.remember}
           onChange={handleEventInput}
         />
-        <button disabled ={isDisabled} onClick={(e) => onLogIn(e, data)}>Log-In</button>
+        <button disabled ={isDisabled}>Log-In</button>
         <button onClick={handleEventReset}>Reset</button>
       </form>
     </>
