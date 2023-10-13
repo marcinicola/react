@@ -10,6 +10,10 @@ export function UnControlledForm() {
     console.log(data);
 };
 
+/*
+VANTAGGI: Gestisce i dati di form piu' complessi e supportata da tutti i browser.
+SVANTAGGI: Non supportato da browser più vecchi ed è più difficile eseguire il debug
+*/
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" name="username" />
