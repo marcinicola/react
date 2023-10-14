@@ -16,6 +16,10 @@ export function TodoList() {
     setTodo("")
   };
 
+  const handleClickReset = () => {
+    setItems([])
+  }
+
   return (
     <>
       <ul>
@@ -25,6 +29,7 @@ export function TodoList() {
       </ul>
       <input value={todo} onChange={handleOnChange} type="text" />
       <button onClick={handleClickTodo}>ADD</button>
+      <button onClick={handleClickReset}>RESET</button>
     </>
   );
 }
