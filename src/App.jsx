@@ -1,10 +1,10 @@
 import "./App.css";
-import { Colors } from "./Colors";
+import { TodoList } from "./TodoList";
 
 function App() {
   return (
     <>
-      <Colors />
+      <TodoList />
     </>
   );
 }
