@@ -1,3 +1,3 @@
 export function Welcome ({name}){
-    return <p>Welcome,{name}</p>
+    return <p className="welcome">Welcome,{name}</p>
 }
