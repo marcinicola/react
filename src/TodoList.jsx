@@ -4,6 +4,7 @@ export function TodoList() {
   const [items, setItems] = useState([]);
   const [todo, setTodo] = useState("");
 
+
   const handleOnChange = (e) => {
     setTodo(e.target.value);
   };
@@ -12,6 +13,7 @@ export function TodoList() {
     setItems((items) => {
       return [...items, todo];
     });
+    setTodo("")
   };
 
   return (
@@ -22,7 +24,7 @@ export function TodoList() {
         })}
       </ul>
       <input value={todo} onChange={handleOnChange} type="text" />
-      <button onClick={handleClickTodo}></button>
+      <button onClick={handleClickTodo}>ADD</button>
     </>
   );
 }
