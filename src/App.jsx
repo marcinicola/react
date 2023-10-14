@@ -1,14 +1,12 @@
-import './App.css'
-import { FocusAbleInput } from './FocusAbleInput'
+import "./App.css";
+import { Counter } from "./Counter";
 
 function App() {
- 
-
   return (
     <>
-     <FocusAbleInput />
+      <Counter />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
