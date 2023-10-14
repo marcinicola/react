@@ -20,7 +20,7 @@ export function Login({ onLogIn }) {
     });
   };
 
-  const isDisabled = data.username === "" || data.password === ""
+  const isDisabled = data.username === "" || data.password === "";
 
   return (
     <>
@@ -43,7 +43,14 @@ export function Login({ onLogIn }) {
           checked={data.remember}
           onChange={handleEventInput}
         />
-        <button disabled={isDisabled} onClick={(e) => onLogIn(e, data)}>
+        <button
+          style={{
+            backgroundColor: data.password.length < 8 ? "red" : "green",
+            color: "white",
+          }}
+          disabled={isDisabled}
+          onClick={(e) => onLogIn(e, data)}
+        >
           Log-In
         </button>
       </form>
