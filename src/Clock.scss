@@ -1,0 +1,16 @@
+body {
+  background: rgb(102, 30, 174);
+  background: linear-gradient(
+    90deg,
+    rgba(102, 30, 174, 1) 9%,
+    rgba(70, 210, 238, 1) 31%,
+    rgba(37, 37, 193, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h2 {
+  font-size: 10rem;
+  color: black;
+  text-shadow: 20px 20px 40px rgba(0,0,0,0.5)
+}

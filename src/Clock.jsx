@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Clock.scss"
 
 export function Clock() {
   const [currentTime, SetCurrentTime] = useState("");
@@ -20,8 +21,7 @@ export function Clock() {
 
   return (
     <>
-      <h2>Current Clock</h2>
-        <p>{currentTime}</p>
+        <h2>{currentTime}</h2>
     </>
   );
 }
