@@ -4,7 +4,6 @@ export function TodoList() {
   const [items, setItems] = useState([]);
   const [todo, setTodo] = useState("");
 
-
   const handleOnChange = (e) => {
     setTodo(e.target.value);
   };
@@ -13,18 +12,31 @@ export function TodoList() {
     setItems((items) => {
       return [...items, todo];
     });
-    setTodo("")
+    setTodo("");
   };
 
   const handleClickReset = () => {
-    setItems([])
-  }
+    setItems([]);
+  };
+
+  const handleRemoveClick = (index) => {
+    setItems(
+      items.filter((i, el) => {
+       return el !== index
+      })
+    );
+  };
 
   return (
     <>
       <ul>
-        {items.map((item) => {
-          return <li>{item}</li>;
+        {items.map((item,index) => {
+          return (
+            <li key={index}>
+              {item}
+              <button onClick={() => handleRemoveClick(index)}>REMOVE</button>
+            </li>
+          );
         })}
       </ul>
       <input value={todo} onChange={handleOnChange} type="text" />
