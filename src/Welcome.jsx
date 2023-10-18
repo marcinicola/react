@@ -5,7 +5,7 @@ export function Welcome({ name }) {
     <>
       <div>
         {name === "John" && <p>Welcome,{name}</p>}
-        <Age age={66} />
+        <Age age={64} />
       </div>
     </>
   );
