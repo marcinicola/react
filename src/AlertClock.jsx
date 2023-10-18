@@ -1,13 +1,12 @@
-import "./App.css"
+import "./App.css";
 
 export function AlertClock() {
-    function handleButtonClick() {
-        alert('Current time: ' + new Date().toLocaleTimeString())
-        }
-        return (
-            <div>
-                <button onClick={handleButtonClick}>Click</button>
-            </div>
-        )
+  function handleButtonClick() {
+    alert("Current time: " + new Date().toLocaleTimeString());
+  }
+  return (
+    <div>
+      <button onClick={handleButtonClick}>Click</button>
+    </div>
+  );
 }
-
