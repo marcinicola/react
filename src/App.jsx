@@ -1,14 +1,12 @@
-import { AlertClock } from './AlertClock'
-import './App.css'
+import { AlertClock } from "./AlertClock";
+import "./App.css";
 
 function App() {
- 
-
   return (
     <>
-     <AlertClock />
+      <AlertClock />
     </>
-  )
+  );
 }
 
-export default  App
+export default App;
