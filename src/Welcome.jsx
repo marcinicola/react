@@ -1,8 +1,7 @@
-export function Welcome({ name, age }) {
+export function Welcome() {
   return (
     <div>
-      <p>Welcome,{name}</p>
-      <p>Your age is {age}</p>
+      <h1>Welcome,Nicola</h1>
     </div>
   );
 }

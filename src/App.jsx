@@ -1,12 +1,13 @@
 import "./App.css";
 import "./Container.css";
+import { Age } from "./Age";
 import { Welcome } from "./Welcome";
 import { Container } from "./Container";
 
 function App() {
   return (
-    <Container>
-      <Welcome name="Nicola" age={27} />
+    <Container title={<Welcome />}>
+      <Age age={27} />
     </Container>
   );
 }
