@@ -1,10 +1,10 @@
 import { Age } from "./Age";
 
-export function Welcome({ name }) {
+export function Welcome({ name, age }) {
   return (
     <div>
       <p>Welcome,{name}</p>
-      <Age/>
+      {age && <Age age={age} />}
     </div>
   );
 }
