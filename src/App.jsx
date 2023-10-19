@@ -1,5 +1,5 @@
 import { Clock } from "./Clock";
-import { LanguageContext } from "./LanguageContext";
+/* import { LanguageContext } from "./LanguageContext"; */
 import { useState } from "react";
 import "./App.css";
 
@@ -14,9 +14,11 @@ function App() {
         <option value="it"> Italiano </option>
         <option value="en"> English </option>
       </select>
-      <LanguageContext.Provider value={language}>
-        <Clock />
-      </LanguageContext.Provider>
+
+      {/*  rimuovendo <LanguageContext.Provider> dal codice, 
+      il componente <Clock> non avrà più accesso al value language. */}
+
+      <Clock />
     </div>
   );
 }
