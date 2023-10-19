@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <select value={language} onChange={handleSetLangueage}>
-        <option value="it">Italiano</option>
-        <option value="en">English</option>
+        <option value="it"> Italiano </option>
+        <option value="en"> English </option>
       </select>
       <LanguageContext.Provider value={language}>
         <Clock />
