@@ -1,14 +1,15 @@
-import './App.css'
-import { GitHubUser } from './GitHubUser'
+import { useState } from "react";
+import { GitHubUsers } from "./GithubUsers"
+import "./App.css";
 
 function App() {
- 
-
+  const [username, setUsername] = useState("");
   return (
     <>
-     <GitHubUser username="marcinicola"/>
+      <GitHubUsers username={username} setUsername={setUsername} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+

@@ -12,8 +12,8 @@ export function GitHubUser({ username }) {
     try {
       setLoanding(true);
       const response = await fetch(API_URL);
-      const data = await response.json();
-      setData(data);
+      const result = await response.json();
+      setData(result);
     } catch (error) {
       setError(error);
     } finally {
