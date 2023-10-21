@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import { ControlledForm } from "./ControlledForm";
 
 function App() {
- 
-
   return (
     <>
-     
+      <ControlledForm />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
