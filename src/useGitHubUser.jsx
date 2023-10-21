@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-export const useGitHubUser = ({ username }) => {
+export const useGitHubUser = (username) => {
   const API_URL = `https://api.github.com/users/${username}`;
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
-  const fetchData = async (username) => {
+  const fetchData = async () => {
     try {
       const response = await fetch(API_URL);
       if (!response.ok) {
@@ -14,16 +14,13 @@ export const useGitHubUser = ({ username }) => {
       }
       const dataResponse = await response.json();
       setData(dataResponse);
-      setError(null);
     } catch (error) {
       setError(error);
     }
   };
 
   useEffect(() => {
-    if (username) {
-      fetchData(username);
-    }
-  }, [username]);
+    fetchData();
+  }, []);
+  return { data };
 };
-return { data };
