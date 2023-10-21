@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import { Counter } from "./Counter";
+import "./App.css";
 
 function App() {
- 
-
   return (
     <>
-     
+      <Counter />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
