@@ -1,19 +1,13 @@
-import './App.css'
-import { Login } from './Login'
-import { UnControlledForm } from './UnControlledForm';
+import "./App.css";
+
+import { UnControlledForm } from "./UnControlledForm";
 
 function App() {
- const onLogIn = (e,data) => {
-   e.preventDefault()
-   console.log(data);
-}
-
   return (
     <>
-     <Login onLogIn={onLogIn}/>
-     <UnControlledForm />
+      <UnControlledForm />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
