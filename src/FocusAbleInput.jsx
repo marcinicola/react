@@ -1,11 +1,21 @@
-import { useRef } from "react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { Button } from 'react-bootstrap';
 
-export function FocusAbleInput() {
-  const _inputRef = useRef(null);
+const FocusAbleInput = () => {
+  const inputRef = useRef(null);
 
   useEffect(() => {
-    _inputRef.current?.focus();
+    inputRef.current?.focus();
   }, []);
-  return <input ref={_inputRef} type="text" />;
-}
+
+  return (
+    <>
+      <input className="text-danger" type="text" ref={inputRef} />
+      <Button onClick={() => alert("bottone cliccato")} variant="success">
+        Cliccami
+      </Button>
+    </>
+  );
+};
+
+export default FocusAbleInput;
