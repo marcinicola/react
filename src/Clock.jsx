@@ -1,27 +1,23 @@
 import { useState, useEffect } from "react";
 
 export function Clock() {
-  const [currentTime, SetCurrentTime] = useState("");
-  const data = () => {
-    const currentTime = new Date().toLocaleTimeString();
-    return currentTime;
-  };
+  const [currentTime, setCurrentTime] = useState("");
+  const getTime = () => setCurrentTime(new Date().toLocaleTimeString());
 
   useEffect(() => {
     const interval = setInterval(() => {
-      SetCurrentTime(data());
-    }, 1000)
+      getTime();
+    }, 1000);
 
-        return() => {
-            clearInterval(interval)
-        }
-
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
     <>
       <h2>Current Clock</h2>
-        <p>{currentTime}</p>
+      <p>{currentTime}</p>
     </>
   );
 }
