@@ -4,7 +4,7 @@ export function Counter() {
   const [counter, setCounter] = useState(0);
 
   function handleClick() {
-    setCounter(counter + 1);
+    setCounter((c) => c + 1);
   }
   return (
     <>
