@@ -1,13 +1,12 @@
-import './App.css'
-import { Welcome } from './Welcome'
+import "./App.css";
+import { Welcome } from "./Welcome";
 
 function App() {
-
   return (
     <>
-      <Welcome name="Jonh"/> 
+      <Welcome name="Jonh" age={64} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
